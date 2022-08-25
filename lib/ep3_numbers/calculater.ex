@@ -16,10 +16,10 @@ defmodule Calculator do
 
   ## Examples
 
-      iex> BasicMath.find_percentage_of_value(25, 100)
+      iex> Calculator.find_percentage_of_value(25, 100)
       25.0
 
-      iex> BasicMath.find_percentage_of_value(23, 456)
+      iex> Calculator.find_percentage_of_value(23, 456)
       104.89
 
   """

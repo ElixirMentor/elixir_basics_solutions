@@ -66,7 +66,7 @@ defmodule BasicMath do
       iex> BasicMath.multiply(4, 5)
       20
 
-      iex> BasicMath.mulitply(33.3, 8.9)
+      iex> BasicMath.multiply(33.3, 8.9)
       296.37
 
   """
@@ -87,10 +87,10 @@ defmodule BasicMath do
   ## Examples
 
       iex> BasicMath.divide(4, 5)
-      20
+      0.8
 
       iex> BasicMath.divide(33.3, 8.9)
-      296.37
+      3.7415730337078648
 
   """
   def divide(dividend, divisor) do
