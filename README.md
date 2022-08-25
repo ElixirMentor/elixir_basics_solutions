@@ -14,7 +14,7 @@ mix deps.get
 ```
 mix docs
 ```
-You will find generated `html` and a `.epub` files in `/doc` directory.
+You will find generated `html` files and a `.epub` file in `/doc` directory.
 
 ## SUPPORT BACKEND STUFF
 
