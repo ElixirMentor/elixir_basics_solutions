@@ -1,4 +1,4 @@
-<img align="center" src="documentation/images/bs_github_readme_banner"/>
+<img align="center" src="documentation/images/bs_github_readme_banner.png"/>
 
 # ELIXIR BASICS SOLUTIONS
 Subscribe to [Backend Stuff](https://www.youtube.com/channel/UChbS_z6KHQiIu9et38O37eQ) if you're interested in learning how to build scalable, production ready APIs in Elixir and some DevOps along the way, please subscribe to my channel Backend Stuff, and start your backend development journey.
