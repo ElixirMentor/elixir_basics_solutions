@@ -3,7 +3,7 @@
 # ELIXIR BASICS SOLUTIONS
 Subscribe to [Backend Stuff](https://www.youtube.com/channel/UChbS_z6KHQiIu9et38O37eQ) if you're interested in learning how to build scalable, production ready APIs in Elixir and some DevOps along the way, please subscribe to my channel Backend Stuff, and start your backend development journey.
 
-You will find the solutions for [Elixir Basics](https://youtube.com/playlist?list=PL2Rv8vpZJz4w7Sm9STyZvoY0JAKUk_JOB) here.  Every episode has it's own directory inside the `/lib` directory with documentations and written tests found in the `/test` directory.
+You will find the solutions for [Elixir Basics](https://youtube.com/playlist?list=PL2Rv8vpZJz4w7Sm9STyZvoY0JAKUk_JOB) here.  Every episode has it's own directory inside the `/lib` directory with documentation and written tests found in the `/test` directory.
 
 
 ## SUPPORT BACKEND STUFF
