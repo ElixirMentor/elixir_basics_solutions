@@ -1,6 +1,6 @@
 defmodule BasicMath do
   @moduledoc """
-  Documentation for `BasicMath`.
+  `BasicMath` was created for episode 3 in Elixir Basics.
   """
 
   @doc """
@@ -70,6 +70,7 @@ defmodule BasicMath do
       296.37
 
   """
+  @doc since: "0.1.0"
   def multiply(multiplier, multplicand) do
     multiplier * multplicand
   end
@@ -93,6 +94,7 @@ defmodule BasicMath do
       3.7415730337078648
 
   """
+  @doc since: "0.1.0"
   def divide(dividend, divisor) do
     dividend / divisor
   end
@@ -115,6 +117,7 @@ defmodule BasicMath do
       68
 
   """
+  @doc since: "0.1.0"
   def absolute_value(value) do
     abs(value)
   end
@@ -137,30 +140,13 @@ defmodule BasicMath do
       -33.33
 
   """
+  @doc since: "0.1.0"
   def round_up(value) do
-    Float.ceil(value, 2)
-  end
-
-  @doc """
-  Returns a value rounded down to the nearest 100th place of given `value`.
-
-  Returns `number`
-
-  ## Parameters
-
-  - value: number (integer or float)
-
-  ## Examples
-
-      iex> BasicMath.round_down(5.66667)
-      5.66
-
-      iex> BasicMath.round_down(-33.333334)
-      -33.34
-
-  """
-  def round_down(value) do
-    Float.floor(value, 2)
+    if is_integer(value) == true do
+      round(value)
+    else
+      Float.ceil(value, 2)
+    end
   end
 
   @doc """
@@ -181,32 +167,8 @@ defmodule BasicMath do
       -33
 
   """
+  @doc since: "0.1.0"
   def truncate_value(value) do
     trunc(value)
-  end
-
-  @doc """
-  Returns binary string value given a integer `value`.
-
-  Returns `string`
-
-  ## Parameters
-
-  - value: integer between 0 and 255
-
-  ## Examples
-
-      iex> BasicMath.int_to_binary(12)
-      "00001100"
-
-      iex> BasicMath.int_to_binary(255)
-      "11111111"
-
-  """
-  @doc since: "0.1.0"
-  def int_to_binary(value) when is_integer(value) do
-    value
-    |> Integer.to_string(2)
-    |> String.pad_leading(8, "0")
   end
 end
