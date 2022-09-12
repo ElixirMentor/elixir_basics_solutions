@@ -17,9 +17,6 @@ defmodule LinkedLists do
 
   @spec add_fast(any, any) :: list
   def add_fast(value, list) do
-    # list_reversed = Enum.reverse(list)
-    # prepend_list = [value | list_reversed]
-    # Enum.reverse(prepend_list)
     list
     |> Enum.reverse()
     |> prepend(value)
