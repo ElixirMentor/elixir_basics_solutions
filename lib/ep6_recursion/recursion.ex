@@ -3,6 +3,15 @@ defmodule Recursion do
     ["Space Helmet", "Space Suit", "Snacks", "Grapling Hook", "Probe"]
   end
 
+  def loop([]), do: nil
+  def loop([head | tail]) do
+    #Do something with head
+    IO.puts(head)
+    loop(tail)
+  end
+
+  def equipment_count([]), do: 0
+  def equipment_count([_head | tail]), do: 1 + equipment_count(tail)
 
   def format_equipment_list([]), do: []
   def format_equipment_list([head | tail]) do
@@ -17,17 +26,9 @@ defmodule Recursion do
     end)
   end
 
-  def return_occurrences(equipment, value, occurrences \\ [])
-  def return_occurrences([], _value, occurrences), do: occurrences
-  def return_occurrences([head | tail], value, occurrences) do
-    if String.contains?(head, String.downcase(value)) do
-      return_occurrences(tail, value, [head | occurrences])
-    else
-      return_occurrences(tail, value, occurrences)
-    end
-  end
-
-
-
+  def occurrence_count([], _value), do: 0
+  def occurrence_count([_head | _tail], "Snacks"), do: 400
+  def occurrence_count([value | tail], value), do: 1 + occurrence_count(tail, value)
+  def occurrence_count([_head | tail], value), do: occurrence_count(tail, value)
 
 end
