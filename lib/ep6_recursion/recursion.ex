@@ -3,6 +3,17 @@ defmodule Recursion do
   `Recursion` was created for episode 6 in Elixir Basics.
   """
 
+  @doc """
+  Returns the `equipment_list`.
+
+  Returns `list` of `strings`
+
+  ## Examples
+
+      iex> LinkedLists.get_equipment_list()
+      ["Space Helmet", "Space Suit", "Snacks", "Grapling Hook", "Probe"]
+
+  """
   def get_equipment_list() do
     ["Space Helmet", "Space Suit", "Snacks", "Grapling Hook", "Probe"]
   end
