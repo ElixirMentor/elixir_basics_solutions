@@ -1,8 +1,23 @@
 defmodule LinkedLists do
+  @moduledoc """
+  `LinkedLists` was created for episode 5 in Elixir Basics.
+  """
 
+  @doc """
+  Returns the `equipment_list`.
+
+  Returns `list` of `strings`
+
+  ## Examples
+
+      iex> LinkedLists.get_equipment_list()
+      ["Space Helmet", "Space Suit", "Snacks", "Grapling Hook", "Probe"]
+
+  """
   def get_equipment_list() do
     ["Space Helmet", "Space Suit", "Snacks", "Grapling Hook", "Probe"]
   end
+
   def get_first_item(list) do
     hd(list)
   end
