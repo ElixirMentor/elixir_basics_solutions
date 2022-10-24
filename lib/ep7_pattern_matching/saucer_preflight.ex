@@ -4,8 +4,8 @@ defmodule SaucerPreflight do
 
   defp convert_kg_to_lb(kg_value), do: kg_value * 2.2
 
-  defp get_total_load([]), do: 0
-  defp get_total_load([head | tail]) do
+  def get_total_load([]), do: 0
+  def get_total_load([head | tail]) do
       (head
         |> EquipmentDetails.item_details()
         |> elem(0)
