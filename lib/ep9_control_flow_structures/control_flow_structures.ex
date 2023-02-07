@@ -25,13 +25,13 @@ defmodule ControlFlowStructures do
     end
   end
 
-  defp convert_kg_to_lb(kg_value), do: kg_value * 2.2
+  defp convert_lb_to_kg(lb_value), do: lb_value / 2.2
 
   def equipment_check(equipment_tuple) do
     case equipment_tuple do
       {weight, unit_type, quantity} when weight / quantity < 16 and unit_type == :kg -> :equipment_cleared
       {weight, unit_type, quantity} when unit_type == :lb ->
-        if convert_kg_to_lb(weight) / quantity < 16, do: :equipment_cleared, else: :failed
+        if convert_lb_to_kg(weight) / quantity < 16, do: :equipment_cleared, else: :failed
       _ -> :failed
     end
   end
